@@ -5,10 +5,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./resources/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<script src="./languageSwitcher.js" defer></script>
 </head>
 <body>
 	<header>
-		
+		<div id = "language-switcher" class="nav-item">
+			<span title="en" class="flags">&#127468;&#127463;</span> <!-- Flag icon for English -->
+        	<span title="fr" class="flags">&#127467;&#127479;</span> <!-- Flag icon for French -->
+       	 	<span title="it" class="flags">&#127470;&#127481;</span> <!-- Flag icon for Italian -->
+		</div>
+		<h1 class="nav-item">Olivier Lord</h1>
+		<nav>
+			<ul class="nav-item">
+				<li><a href="#about-me" class="aboutMeSwitch">About Me</a></li>
+				<li><a class="projectsSwitch" href="#projects">Projects</a></li>
+				<li><a class="skillsSwitch" href="#skills">Skills</a></li>
+				<li id="contact" ><a class="contactSwitch" href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
 	</header>
+	<main>
+		<div id="about-me">
+			<img src ="./resources/35D61E9F-18A7-4FEA-A4FF-ECEEA0CFF4E6_1_105_c.jpeg" alt="Ma face">
+			<div id="about-me-text">
+				<h2 class="aboutMeSwitch">About me</h2>
+				<p id="bigP">Hello there, my name is Olivier. I am an apprentice web developper following the Codecademy full-stack career path. I focus on web development language JS CSS and HTML. I have only done few projects so far, but they are amazing.</p>
+			</div>
+		</div>
+		<div id="projects">
+			<h2 class="projectsSwitch">Projects</h2>
+			<ul>
+				<li><a href="https://github.com/Olive150/MessageGenerator">Message generator</a></li>
+			</ul>
+		</div>
+		<div id="skills">
+			<h2 class="skillsSwitch">Skills</h2>
+			<div id="skills-container">
+				<img src ="./resources/33773_green_shell_icon.png" alt="shell">
+				<img src ="./resources/88663_css_icon.png" alt="css">
+				<img src ="./resources/315595_html_file_icon.png" alt="html">
+				<img src ="./resources/652581_code_command_develop_javascript_language_icon.png" alt="js">
+				<img src ="./resources/1298743_github_git_logo_social_icon.png" alt="github">
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>OlivierLordPortfolio. All rights reserved. Quebec, Qc, Canada march 2024</p>
+	</footer>
+	
 </body>
 </html>

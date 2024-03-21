@@ -1,3 +1,139 @@
-body {
-	background-color: aqua;
+html{
+	font-size: 18px;
+	font-family: "Open Sans";
+	
+	
 }
+body {
+	
+	margin:0 2rem;
+	background-color: #1f1f1f;
+	color: white;
+	font-family: "Open Sans";
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px; /* Set a maximum width for the header */
+	width: 100%; /* Ensure the header fills the available width */
+	margin: 0 auto; /* Center the header horizontally */
+	padding-top:2rem;
+
+	
+}
+h1 {
+	font-size: 2.0rem;
+}
+.flags:hover {
+	cursor: pointer;
+}
+
+a:hover {
+	cursor: pointer; /* Change cursor on hover */
+  }
+
+a:link,
+a:visited,
+a:active {
+	color:inherit;
+}
+
+header ul{
+	display: flex;
+	justify-content: flex-start;
+	padding: 0;
+	list-style: none;
+}
+header li{
+	margin: 10px;
+}
+#language-switcher span {
+	font-size:24px;
+}
+#about-me {
+	display:flex;
+	background-color: #2f2f2f;
+	border-radius: .3rem;
+	margin-top: 2rem;
+
+}
+#about-me img {
+    max-width: 60%; /* Set the maximum width of the image to 100% */
+    height: auto; /* Allow the height to adjust proportionally */
+	margin-right:0.8rem;
+}
+#about-me-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+#projects {
+	background-color: #2f2f2f;
+	border-radius: .4rem;
+	margin-top: 4rem;
+	
+}
+#projects h2 {
+	padding-left: 1rem;
+}
+#projects li {
+	list-style: none;
+	padding-bottom: 1rem;
+}
+#skills {
+	background-color: #2f2f2f;
+	border-radius: .4rem;
+	margin-top: 4rem;
+	
+}
+
+#skills-container {
+
+	display:flex;
+	justify-content: space-evenly;
+	
+}
+#skills-container img {
+	max-width: 8%;
+	padding: 1rem;
+}
+#skills h2 {
+	padding-left: 1rem;
+}
+footer {
+    position: fixed; /* Fixed position to keep it at the bottom of the window */
+    bottom: 0; /* Stick to the bottom of the window */
+    width: 100%; /* Occupy full width */
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center; /* Center-align text */
+}
+
+@media screen and (max-width: 880px) {
+    header li {
+        display: none;
+		
+    }
+
+    /* Show only the "Contact" element */
+    #contact {
+        display: block;
+		font-size: 1.5rem;
+    }}
+
+@media screen and (max-width: 500px) {
+	header h1,
+	#contact{
+		font-size: 1.5rem;
+	}
+	#about-me {
+		flex-direction: column;
+	
+	}
+	#about-me img {
+		max-width: 100%;
+	}
+
+	}
