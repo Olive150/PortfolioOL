@@ -83,16 +83,15 @@ header li{
 	padding-bottom: 1rem;
 }
 .project-image {
-    position: absolute;
-    top: -50px; /* Adjust as needed to position it above the project list */
-    right: 10px; /* Adjust as needed to position it slightly to the right */
+	position: absolute;
+    top: 50%;
+    right: 0; /* Adjust this value to position the image to the right */
+    transform: translateY(-50%);
     width: 100px; /* Adjust the width as needed */
     display: none; /* Initially hide the image */
 }
 
-#projects {
-    position: relative;
-}
+
 
 #skills {
 	background-color: #2f2f2f;
