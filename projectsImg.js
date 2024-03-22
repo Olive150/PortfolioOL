@@ -14,10 +14,11 @@ projectLink.forEach(function (link, index){
 		console.log(imgProject.src);
 		imgContainer.innerHTML = '';
 		imgContainer.appendChild(imgProject);
-		imgContainer.style.display = 'block';
+		imgContainer.style.display= 'block';
+		imgProject.style.display= 'block';
 		
 	})
-	link.addEventListener('mouseleave', function(){
+	  link.addEventListener('mouseleave', function(){
 		imgContainer.innerHTML = '';
 		imgContainer.style.display = 'none';
 	})
